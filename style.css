@@ -154,3 +154,78 @@ main .container{
 #uno .profile .data, #cinco .profile .data{
 	margin-left: 1px;
 }
+
+
+
+
+@media (max-width: 375px){
+	main{
+		height: auto;
+	}
+
+	main .container{
+		width: 87%;
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6,auto);
+		margin: 70px auto;
+		grid-row-gap: 22px;
+	}
+
+	#uno, #dos, #tres, #cuatro, #cinco{
+		grid-column: 1/1;
+	}
+
+	#uno{
+		background-size: 100px 97px;
+		background-position: 190px 0px;
+	}
+
+	#tres{
+		grid-row: 5/7;
+	}
+
+	.container .card{
+		padding: 19px 28px 18px 30px;
+	}
+
+	.card .profile .image img{
+		width: 31px;
+		height: 31px;
+	}
+
+	#uno .profile .image, #cinco .profile .image{
+		margin-right: 14px;
+	}
+
+	.profile .data h3{
+		font-size: 12.5px;
+	}
+
+	.profile .data p{
+		font-size: 11px;
+		line-height: 15px;
+	}
+
+	.card .profile .text{
+		margin-top: 12px;
+	}
+
+	.profile .text h2{
+		font-size: 19.5px;
+		line-height: 23px;
+	}
+
+	.profile .text p{
+		font-size: 12.9px;
+		line-height: 17px;
+		padding-right: 20px; 
+	}
+
+	.profile .text p{
+		margin-top: 17px;
+		margin-bottom: 15.5px;
+	}
+
+}
